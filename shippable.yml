@@ -16,6 +16,7 @@ env:
 #    - M2=TWO
 
 build:
+  cache: true
   pre_ci:
     - docker build --rm -t=ragesh/sample_node .
 

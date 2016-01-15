@@ -28,7 +28,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - cat now.txt
+    - if [ -f "now.txt" ]; then cat now.txt; fi
     - date > now.txt
     - cat now.txt
     - shippable_cache_container

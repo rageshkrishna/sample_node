@@ -11,9 +11,9 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
+#  matrix:
+#    - M1=ONE
+#    - M2=TWO
 
 build:
   pre_ci:
@@ -28,7 +28,10 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - foobar
+    - cat now.txt
+    - date > now.txt
+    - cat now.txt
+    - shippable_cache_container
 
   post_ci:
     - docker push ragesh/sample_node

@@ -28,6 +28,7 @@ build:
   ci:
     - ps -eax
     - ls -al
+    - foobar
 
   post_ci:
     - docker push ragesh/sample_node

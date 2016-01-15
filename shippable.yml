@@ -29,9 +29,9 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - if [ -f "now.txt" ]; then cat now.txt; fi
-    - date > now.txt
-    - cat now.txt
+    - if [ -f "/root/now.txt" ]; then cat now.txt; fi
+    - date > /root/now.txt
+    - cat /root/now.txt
     - shippable_cache_container
 
   post_ci:

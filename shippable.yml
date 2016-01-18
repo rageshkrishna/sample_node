@@ -16,7 +16,7 @@ env:
 #    - M2=TWO
 
 build:
-#  cache: true
+  cache: true
 #  pre_ci:
 #    - docker build --rm -t=ragesh/sample_node .
 
@@ -32,7 +32,7 @@ build:
     - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
     - date > /root/now.txt
     - cat /root/now.txt
-  #  - shippable_cache_container
+    - shippable_cache_container
 
 #  post_ci:
 #    - docker push ragesh/sample_node

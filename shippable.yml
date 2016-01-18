@@ -17,8 +17,8 @@ env:
 
 build:
   cache: true
-  pre_ci:
-    - docker build --rm -t=ragesh/sample_node .
+#  pre_ci:
+#    - docker build --rm -t=ragesh/sample_node .
 
   pre_ci_boot:
     image_name: ragesh/sample_node
@@ -27,18 +27,18 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-    - ps -eax
-    - ls -al
+#    - ps -eax
+#    - ls -al
     - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
     - date > /root/now.txt
     - cat /root/now.txt
   #  - shippable_cache_container
 
-  post_ci:
-    - docker push ragesh/sample_node
+#  post_ci:
+#    - docker push ragesh/sample_node
 
-  smoke_test:
-    - sudo ls /
+#  smoke_test:
+#    - sudo ls /
 
 deploy:
   pre_build:

@@ -21,7 +21,8 @@ build:
 #    - docker build --rm -t=ragesh/sample_node .
 
   pre_ci_boot:
-    image_name: ragesh/sample_node
+#    image_name: ragesh/sample_node
+    image_name: ragesh/broken
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'

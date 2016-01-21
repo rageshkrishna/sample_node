@@ -40,7 +40,12 @@ build:
 #    - docker push ragesh/sample_node
 
 #  smoke_test:
-    - sudo ls /
+#    - sudo ls /
+  on_failure:
+    - echo "The job failed!!!!!"
+    
+  on_success:
+    - echo "The job succeeded!!!!"
 
 deploy:
   pre_build:

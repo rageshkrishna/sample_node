@@ -11,9 +11,9 @@ env:
     - FO1=BUBU
     - BOO=GUBU
 
-  matrix:
-    - M1=ONE
-    - M2=TWO
+#  matrix:
+#    - M1=ONE
+#    - M2=TWO
 
 build:
 #  cache: true
@@ -21,8 +21,8 @@ build:
 #    - docker build --rm -t=ragesh/sample_node .
 
   pre_ci_boot:
-#    image_name: ragesh/sample_node
-    image_name: ragesh/broken
+    image_name: ragesh/sample_node
+#    image_name: ragesh/broken
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'

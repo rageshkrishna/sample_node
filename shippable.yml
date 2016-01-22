@@ -17,11 +17,11 @@ env:
 
 build:
 #  cache: true
-#  pre_ci:
-#    - docker build --rm -t=ragesh/sample_node .
+  pre_ci:
+    - docker build --rm -t=ragesh/sample_node2 .
 
   pre_ci_boot:
-    image_name: ragesh/sample_node
+    image_name: ragesh/sample_node2
 #    image_name: ragesh/broken
     image_tag: latest
     pull: false
@@ -36,8 +36,8 @@ build:
     - shippable_cache_container
 #    - if [ "$M2" == "TWO" ]; then foobar; fi
 
-#  post_ci:
-#    - docker push ragesh/sample_node
+  post_ci:
+    - docker push ragesh/sample_node2
 
 #  smoke_test:
 #    - sudo ls /

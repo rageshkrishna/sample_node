@@ -71,7 +71,7 @@ integrations:
           - test
 
   hub:
-    - integrationName: "Ragesh - Docker"
+    - integrationName: "Ragesh - ECR"
       type: docker
       branches:
         only:

@@ -16,6 +16,8 @@ env:
 #    - M2=TWO
 
 build:
+  services:
+    - mysql
 #  cache: true
   pre_ci:
     - docker build --rm -t=ragesh/sample_node2 .

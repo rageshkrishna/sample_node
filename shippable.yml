@@ -23,10 +23,10 @@ build:
 #    - docker build --rm -t=ragesh/sample_node2 .
 
   pre_ci_boot:
-    image_name: ragesh/sample_node
+    image_name: drydock/u14nodpls
 #    image_name: ragesh/broken
-    image_tag: mysql
-    pull: false
+    image_tag: prod
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:

@@ -23,7 +23,7 @@ build:
 #    - docker build --rm -t=ragesh/sample_node2 .
 
   pre_ci_boot:
-    image_name: ragesh/sample_node
+    image_name: ragesh/sample_node:mysql
 #    image_name: ragesh/broken
     image_tag: latest
     pull: false

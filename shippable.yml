@@ -6,7 +6,8 @@ node_js:
   - 0.12
 
 services:
-  fizzbin: foobar
+  - cassandra
+  
 env:
   global:
     - FOO=FUBU
@@ -23,7 +24,7 @@ build:
 #    - docker build --rm -t=ragesh/sample_node2 .
 
   pre_ci_boot:
-    image_name: drydock/u14nodpls
+    image_name: drydock/u14nodall:prod
 #    image_name: ragesh/broken
     image_tag: prod
     pull: true

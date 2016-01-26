@@ -2,7 +2,7 @@
 language: node_js
 
 # Version number
-node_js:
+versions:
   - 0.12
   
 services:

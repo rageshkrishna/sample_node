@@ -4,9 +4,6 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  
-services:
-  - elasticsearch
 
 env:
   global:
@@ -20,12 +17,13 @@ env:
 
 build:
 #  cache: true
-#  pre_ci:
-#    - docker build --rm -t=ragesh/sample_node2 .
+  pre_ci:
+    - cd ci
+    - docker build --rm -t=ragesh/sample_node:latest .
 
   pre_ci_boot:
-    image_name: drydock/u14nodall
-    image_tag: prod
+    image_name: ragesh/sample_node
+    image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
@@ -74,7 +72,7 @@ integrations:
           - test
 
   hub:
-    - integrationName: "Ragesh - Docker"
+    - integrationName: "Ragesh - GCR"
       type: docker
       branches:
         only:

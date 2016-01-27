@@ -4,7 +4,6 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 4.2.0
   
 services:
   - elasticsearch
@@ -39,8 +38,9 @@ build:
 #    - shippable_cache_container
 #    - if [ "$M2" == "TWO" ]; then foobar; fi
 
-#  post_ci:
-#    - docker push ragesh/sample_node2
+  post_ci:
+    - docker build --rm -t=ragesh/sample_node2 .
+    - docker push ragesh/sample_node2
 
 #  smoke_test:
 #    - sudo ls /

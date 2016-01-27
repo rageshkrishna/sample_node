@@ -36,8 +36,8 @@ build:
 #    - if [ "$M2" == "TWO" ]; then foobar; fi
 
   post_ci:
-    - docker build --rm -t=ragesh/sample_node2 .
-    - docker push ragesh/sample_node2
+    - docker build --rm -t=gcr.io/ragesh-shippable-gcr/sample_node2 .
+    - docker push gcr.io/ragesh-shippable-gcr/sample_node2
 
 #  smoke_test:
 #    - sudo ls /

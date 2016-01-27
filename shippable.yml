@@ -5,6 +5,11 @@ language: node_js
 node_js:
   - 0.12
 
+integrations:
+  hub:
+    - integrationName: "Ragesh - Quay"
+      type: docker
+
 build:
   pre_ci_boot:
     image_name: drydock/u14nodall
@@ -19,20 +24,8 @@ build:
     - docker build --rm -t=quay.io/rageshkrishna/busybox .
     - docker push quay.io/rageshkrishna/busybox
 
-#  smoke_test:
-#    - sudo ls /
   on_failure:
     - echo "The job failed!!!!!"
     
   on_success:
     - echo "The job succeeded!!!!"
-
-deploy:
-  pre_build:
-    - ls
-    - ls -al
-
-integrations:
-  hub:
-    - integrationName: "Ragesh - Quay"
-      type: docker

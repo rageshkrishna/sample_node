@@ -24,7 +24,6 @@ build:
   pre_ci_boot:
     image_name: ragesh/sample_node
     image_tag: latest
-    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:

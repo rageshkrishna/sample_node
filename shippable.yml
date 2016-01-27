@@ -21,8 +21,8 @@ build:
     - echo "Hello, World!"
 
   post_ci:
-    - docker build --rm -t=ragesh/sample_node2 .
-    - docker push ragesh/sample_node2
+    - docker build --rm -t=ragesh/busybox .
+    - docker push ragesh/busybox
 
   on_failure:
     - echo "The job failed!!!!!"

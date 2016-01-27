@@ -1,4 +1,2 @@
-FROM drydock/u14nod:prod
-
-RUN mkdir -p /tmp/logs
+FROM busybox
 ADD . /src

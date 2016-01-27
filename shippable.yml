@@ -33,32 +33,6 @@ deploy:
     - ls -al
 
 integrations:
-  notification:
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - prod
-      branches:
-        only:
-          - master
-
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - beta
-      branches:
-        only:
-          - test
-
   hub:
     - integrationName: "Ragesh - Quay"
       type: docker
-      branches:
-        only:
-          - master
-  deploy:
-    - integrationName: aws-avi
-      type: aws
-      branches:
-        only:
-          - master

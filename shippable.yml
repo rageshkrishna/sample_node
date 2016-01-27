@@ -51,7 +51,7 @@ integrations:
           - test
 
   hub:
-    - integrationName: "Ragesh - Docker"
+    - integrationName: "Ragesh - Quay"
       type: docker
       branches:
         only:

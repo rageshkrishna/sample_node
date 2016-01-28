@@ -12,6 +12,7 @@ env:
 build:
   ci:
     - echo "Hello, World!"
+    - if [ "$NO" == "build" ]; then foobar; fi
 
   on_failure:
     - echo "The job failed!!!!!"

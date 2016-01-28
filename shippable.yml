@@ -24,5 +24,5 @@ matrix:
     - node_js: "4.2.0"
       env: FIZZ=bin BAZ=bin
       gemfile: /src/gem.file
-  exclude:
+  allow_failures:
     - env: NO=build

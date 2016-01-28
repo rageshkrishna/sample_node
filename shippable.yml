@@ -23,3 +23,5 @@ matrix:
     - node_js: "4.2.0"
       env: FIZZ=bin
       gemfile: /src/gem.file
+  exclude:
+    - node_js: 0.12

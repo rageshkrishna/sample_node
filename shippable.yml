@@ -6,7 +6,7 @@ node_js:
   - 0.12
 
 env:
-  - FOO=bar
+  - FOO=bar ABC=def
   - NO=build
 
 build:

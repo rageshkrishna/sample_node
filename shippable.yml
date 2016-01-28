@@ -4,6 +4,7 @@ language: node_js
 # Version number
 node_js:
   - 0.12
+  - 0.10
   
 env:
   - FOO=bar
@@ -25,3 +26,4 @@ matrix:
       gemfile: /src/gem.file
   exclude:
     - node_js: 0.12
+    - node_js: 0.10

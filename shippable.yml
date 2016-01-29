@@ -9,6 +9,9 @@ integrations:
   hub:
     - integrationName: "Ragesh - Docker"
       type: docker
+      
+git:
+  submodules: false
 
 build:
   pre_ci_boot:

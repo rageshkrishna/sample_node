@@ -4,12 +4,12 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  
+
 integrations:
   hub:
     - integrationName: "Ragesh - Docker"
       type: docker
-      
+
 git:
   submodules: false
 
@@ -29,6 +29,6 @@ build:
 
   on_failure:
     - echo "The job failed!!!!!"
-    
+
   on_success:
     - echo "The job succeeded!!!!"

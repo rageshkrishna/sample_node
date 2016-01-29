@@ -6,7 +6,8 @@ node_js:
   - 0.12
   
 env:
-  - secure: VVylGzMnjrAC4AU17wUrkrvhrqyVospJhaFpH43p4fpsRGfX+e+M467f75Gn9ZthSFW9UkL4ctkqjQvZSAAeSuMfLdUjerbvMffGyvoSP4z3b3CbVL+tXRlXXqOXEdR5x4BQfpRtIeniHaZHuAwRNwSmHEnCrCPYhb+62jh5gMG91zkSsgH5WzuEHT/b4V5JEYyjLWSydgFWrjR0evqyKVg15q9bAngr3pz4p7EhAIXuarwRQPuSow98wQS7N8z4cCV75necLiS4FoAMbjgqL+Iybz6zg/p66so2UXRRhhuw81JhGIRcUzYhuUtwNRN4r3cuNK+RzWlADx3UGwPnDQ==
+  global:
+    - secure: VVylGzMnjrAC4AU17wUrkrvhrqyVospJhaFpH43p4fpsRGfX+e+M467f75Gn9ZthSFW9UkL4ctkqjQvZSAAeSuMfLdUjerbvMffGyvoSP4z3b3CbVL+tXRlXXqOXEdR5x4BQfpRtIeniHaZHuAwRNwSmHEnCrCPYhb+62jh5gMG91zkSsgH5WzuEHT/b4V5JEYyjLWSydgFWrjR0evqyKVg15q9bAngr3pz4p7EhAIXuarwRQPuSow98wQS7N8z4cCV75necLiS4FoAMbjgqL+Iybz6zg/p66so2UXRRhhuw81JhGIRcUzYhuUtwNRN4r3cuNK+RzWlADx3UGwPnDQ==
 
 integrations:
   hub:

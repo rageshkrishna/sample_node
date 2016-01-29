@@ -25,6 +25,7 @@ build:
 
   ci:
     - echo "Hello, World!"
+    - echo The magic words are $MAGIC_WORDS
 
   on_failure:
     - echo "The job failed!!!!!"

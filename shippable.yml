@@ -27,6 +27,9 @@ build:
   ci:
     - echo "Hello, World!"
     - echo The magic words are $MAGIC_WORDS
+    
+  post_ci:
+    - docker build --rm -t ragesh/sample_node2:latest .
 
   on_failure:
     - echo "The job failed!!!!!"

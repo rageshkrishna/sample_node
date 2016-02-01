@@ -22,7 +22,7 @@ build:
     image_name: drydock/u14nodall
     image_tag: prod
     pull: true
-#    options: '--net=bridge -e FOO=true -e BOO=false'
+    options: '-e fizz=bin'
 
   ci:
     - echo "Hello, World!"

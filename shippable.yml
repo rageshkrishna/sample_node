@@ -13,19 +13,6 @@ integrations:
   hub:
     - integrationName: "Ragesh - Docker"
       type: docker
-      
-  notifications:
-    - integrationName: "Ragesh - Slack"
-      type: slack
-      recipients:
-        - testintegrations
-      branches:
-        only:
-          - submodule
-      on_start: always
-      on_success: always
-      on_failure: always
-      on_pull_request: always
 
 #git:
 #  submodules: false

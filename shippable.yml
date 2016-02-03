@@ -25,10 +25,10 @@ matrix:
 #  global:
 #    - secure: jp2k2r0impvzOfyM+a4Rgq26IE59dnE8Fvo4BSrn6/A/InQFqqV+SfyfJTcrGCx5JRCJc3iRlRXT4Iyhrs/9o0bk1ySUdYLyqXiWry4V7TMERHp5zV9SHViM6e5ow7a4ie8oDqYIODDI1i5PCPEx5m5QVNkU7AqF+f03Yn2JJRNhO978qy8gzKeuer5c/HAVFmRQqS0dsMmZTsXdPDdBY0SaFpvGJxcYHj63wUyccKW86JmCVlvcC5me613TsVw/v/ns5quV5dmn0u5e05MTGB/I9Dp/lWNS3mjq5XnRXO8MYB+8CP8KVAgswYBRdMwLtdyqyn3H8cyfbnQg1vODEQ==
 
-#integrations:
-#  hub:
-#    - integrationName: "Ragesh - Docker"
-#      type: docker
+integrations:
+  hub:
+    - integrationName: "Ragesh - Docker"
+      type: gcr
 
 #git:
 #  submodules: false

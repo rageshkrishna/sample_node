@@ -28,7 +28,7 @@ matrix:
 integrations:
   hub:
     - integrationName: "Ragesh - Docker"
-      type: gcr
+      type: docker
 
 #git:
 #  submodules: false

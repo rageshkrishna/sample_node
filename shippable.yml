@@ -14,7 +14,7 @@ integrations:
     - integrationName: "Ragesh - Docker"
       type: docker
       
-  notification:
+  notifications:
     - integrationName: "Ragesh - Slack"
       type: slack
       recipients:

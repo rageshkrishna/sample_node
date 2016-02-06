@@ -4,7 +4,6 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-    5
 
 #env:
 #  global:
@@ -27,7 +26,7 @@ build:
 
   ci:
     - echo "Hello, World!"
-    - echo The magic words are $MAGIC_WORDS
+    - ./loop.sh
 
   on_failure:
     - echo "The job failed!!!!!"

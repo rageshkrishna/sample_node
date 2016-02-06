@@ -26,7 +26,6 @@ build:
 
   ci:
     - echo "Hello, World!"
-    - ./loop.sh
 
   on_failure:
     - echo "The job failed!!!!!"

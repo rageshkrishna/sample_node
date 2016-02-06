@@ -27,6 +27,9 @@ build:
   ci:
     - echo "Hello, World!"
     - ./loop.sh
+    - mkdir -p shippable/codecoverage
+    - grunt
+    -  - ./node_modules/.bin/istanbul cover grunt -- -u tdd
 
   on_failure:
     - echo "The job failed!!!!!"

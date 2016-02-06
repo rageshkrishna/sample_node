@@ -33,3 +33,15 @@ build:
 
   on_success:
     - echo "The job succeeded!!!!"
+    
+    
+matrix:
+  allow_failures:
+    - node_js: 0.12
+   
+  exclude:
+    - node_js: "0.12"
+    -  env: M1=ONE
+    - node_js: "5.0"
+      env: M2=TWO
+    - node_js: "0.11"

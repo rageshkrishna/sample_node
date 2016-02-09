@@ -7,24 +7,16 @@ node_js:
   - "4.0"
   - "5.0"
 
-integrations:
-  hub:
-    - integrationName: "Ragesh - Docker"
-      type: docker
-
-#git:
-#  submodules: false
-
 build:
   pre_ci_boot:
-    image_name: drydock/u14nodall
+    image_name: drydock/u12
     image_tag: prod
     pull: false
-    options: '-e fizz=bin'
 
   ci:
     - echo "Hello, World!"
-    - ./loop.sh
+    - source ~/.rvm/rvm
+    - rvm ls
 
   on_failure:
     - echo "The job failed!!!!!"

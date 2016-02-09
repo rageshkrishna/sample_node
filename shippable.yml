@@ -4,8 +4,6 @@ language: node_js
 # Version number
 node_js:
   - "0.12"
-  - "4.0"
-  - "5.0"
 
 integrations:
   hub:
@@ -24,7 +22,6 @@ build:
 
   ci:
     - echo "Hello, World!"
-    - ./loop.sh
 
   on_failure:
     - echo "The job failed!!!!!"

@@ -25,6 +25,10 @@ build:
 
   on_failure:
     - echo "The job failed!!!!!"
+    
+branches:
+ only:
+  - master
 
   on_success:
     - echo "The job succeeded!!!!"

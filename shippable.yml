@@ -28,7 +28,3 @@ build:
     
   on_success:
     - echo "The job succeeded!!!!"
-
-branches:
-  only:
-    - master

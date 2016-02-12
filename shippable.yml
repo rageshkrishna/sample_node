@@ -38,10 +38,6 @@ build:
 #    - shippable_cache_container
 #    - if [ "$M2" == "TWO" ]; then foobar; fi
 
-  post_ci:
-    - docker build --rm -t=ragesh/sample_node2 .
-    - docker push ragesh/sample_node2
-
 #  smoke_test:
 #    - sudo ls /
   on_failure:
@@ -55,33 +51,3 @@ deploy:
     - ls
     - ls -al
 
-integrations:
-  notification:
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - prod
-      branches:
-        only:
-          - master
-
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - beta
-      branches:
-        only:
-          - test
-
-  hub:
-    - integrationName: "Ragesh - Docker"
-      type: docker
-      branches:
-        only:
-          - master
-  deploy:
-    - integrationName: aws-avi
-      type: aws
-      branches:
-        only:
-          - master

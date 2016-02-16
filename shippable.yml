@@ -24,6 +24,7 @@ build:
     options: '-e fizz=bin'
 
   ci:
+    - foobar
     - echo "Hello, World!"
 
   on_failure:

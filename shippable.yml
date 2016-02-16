@@ -18,13 +18,17 @@ integrations:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14nodall
-    image_tag: prod
-    pull: false
+    image_name: shippable/minv2
+    image_tag: latest
+    pull: true
     options: '-e fizz=bin'
 
   ci:
-    - foobar
+    - whoami
+    - echo $HOME
+    - env
+    - ssh-agent -l
+    - ssh -vT git@github.com
     - echo "Hello, World!"
 
   on_failure:

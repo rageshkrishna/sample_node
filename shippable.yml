@@ -21,7 +21,7 @@ build:
     image_name: shippable/minv2
     image_tag: latest
     pull: true
-    options: '-e fizz=bin'
+    options: '-e fizz=bin -u shippable'
 
   ci:
     - whoami

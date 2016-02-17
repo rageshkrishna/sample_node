@@ -27,7 +27,7 @@ build:
     - whoami
     - echo $HOME
     - env
-    - ssh-agent -l
+    - ssh-add -l
     - ssh -vT git@github.com
     - echo "Hello, World!"
 

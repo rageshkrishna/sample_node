@@ -4,32 +4,21 @@ language: node_js
 # Version number
 node_js:
   - "0.12"
-  
-services:
-  - postgres
 
 integrations:
   hub:
     - integrationName: "Ragesh - Docker"
       type: docker
 
-#git:
-#  submodules: false
-
 build:
   pre_ci_boot:
-    image_name: ubuntu
-    image_tag: 14.04
+    image_name: shippable/minv2
+    image_tag: latest
     pull: false
     options: '-e fizz=bin'
 
   ci:
-    - whoami
-    - echo $HOME
-    - env
-    - ssh-add -l
-    - ssh -vT git@github.com
-    - echo "Hello, World!"
+    - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
 
   on_failure:
     - echo "The job failed!!!!!"

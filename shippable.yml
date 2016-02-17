@@ -18,8 +18,8 @@ integrations:
 
 build:
   pre_ci_boot:
-    image_name: ubuntu
-    image_tag: 14.04
+    image_name: drydock/u14nodpls
+    image_tag: prod
     pull: false
     options: '-e fizz=bin'
 

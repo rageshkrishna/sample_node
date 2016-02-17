@@ -24,7 +24,11 @@ build:
     options: '-e fizz=bin'
 
   ci:
-    - foobar
+    - whoami
+    - echo $HOME
+    - env
+    - ssh-add -l
+    - ssh -vT git@github.com
     - echo "Hello, World!"
 
   on_failure:

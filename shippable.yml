@@ -5,42 +5,22 @@ language: node_js
 node_js:
   - 0.12
 
-env:
-  global:
-    - FOO=FUBU
-    - FO1=BUBU
-    - BOO=GUBU
-
-#  matrix:
-#    - M1=ONE
-#    - M2=TWO
-
 build:
-#  cache: true
   pre_ci:
     - cd ci
     - docker build --rm -t=ragesh/sample_node:latest .
 
   pre_ci_boot:
-    image_name: ragesh/sample_node
+    image_name: shippable/minv2
     image_tag: latest
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-#    - ps -eax
     - ls -al
-#    - if [ -f "/root/now.txt" ]; then cat /root/now.txt; fi
-#    - date > /root/now.txt
-#    - cat /root/now.txt
-#    - shippable_cache_container
-#    - if [ "$M2" == "TWO" ]; then foobar; fi
 
   post_ci:
     - docker build --rm -t=gcr.io/ragesh-shippable-gcr/sample_node2 .
     - docker push gcr.io/ragesh-shippable-gcr/sample_node2
 
-#  smoke_test:
-#    - sudo ls /
   on_failure:
     - echo "The job failed!!!!!"
     
@@ -53,32 +33,6 @@ deploy:
     - ls -al
 
 integrations:
-  notification:
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - prod
-      branches:
-        only:
-          - master
-
-    - integrationName: slk-avi
-      type: slack
-      recepients:
-        - beta
-      branches:
-        only:
-          - test
-
   hub:
     - integrationName: "Ragesh - GCR"
       type: docker
-#      branches:
-#        only:
-#          - master
-  deploy:
-    - integrationName: aws-avi
-      type: aws
-      branches:
-        only:
-          - master

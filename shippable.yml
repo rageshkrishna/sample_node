@@ -18,6 +18,7 @@ build:
     options: '-e fizz=bin'
 
   ci:
+    - for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;
     - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
 
   on_failure:

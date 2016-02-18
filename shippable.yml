@@ -11,6 +11,8 @@ integrations:
       type: docker
 
 build:
+  cache: true
+  
   pre_ci_boot:
     image_name: shippable/minv2
     image_tag: latest
@@ -20,6 +22,7 @@ build:
   ci:
     - for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;
     - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
+    - shippable_cache_container
 
   on_failure:
     - echo "The job failed!!!!!"

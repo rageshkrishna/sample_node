@@ -35,4 +35,4 @@ deploy:
 integrations:
   hub:
     - integrationName: "Ragesh - GCR"
-      type: docker
+      type: gcr

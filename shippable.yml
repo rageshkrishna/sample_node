@@ -16,7 +16,7 @@ integrations:
     - integrationName: "Ragesh - Docker"
       type: docker
   key:
-    - integrationName: "Ragesh - SSH"
+    - integrationName: "Ragesh - PEM"
       type: "ssh-key"
 
 build:

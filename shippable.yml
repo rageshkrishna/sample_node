@@ -17,7 +17,7 @@ integrations:
       type: docker
   key:
     - integrationName: "Ragesh - SSH"
-      type: "pem-key"
+      type: "ssh-key"
 
 build:
   pre_ci_boot:

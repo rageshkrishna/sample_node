@@ -17,13 +17,10 @@ integrations:
       type: docker
 
 build:
-  cache: true
-  
   pre_ci_boot:
-    image_name: shippable/minv2
-    image_tag: latest
+    image_name: drydock/u14nod
+    image_tag: prod
     pull: false
-    options: '-e fizz=bin'
 
   ci:
     - for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;

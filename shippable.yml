@@ -15,6 +15,9 @@ integrations:
   hub:
     - integrationName: "Ragesh - Docker"
       type: docker
+  key:
+    - integrationName: "Ragesh - SSH"
+      type: "ssh-key"
 
 build:
   pre_ci_boot:

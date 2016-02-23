@@ -5,19 +5,10 @@ language: node_js
 node_js:
   - "0.10"
   
-  
 env:
   global:
     - FOO=bar
     - FIZZ=bin
-
-integrations:
-  hub:
-    - integrationName: "Ragesh - Docker"
-      type: docker
-  key:
-    - integrationName: "Ragesh - SSH"
-      type: "ssh-key"
 
 build:
   pre_ci_boot:

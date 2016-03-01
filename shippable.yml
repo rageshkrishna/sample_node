@@ -7,7 +7,7 @@ node_js:
   
 env:
   global:
-    - FOO=bar
+    - FOO="bar|baz"
     - FIZZ=bin
 
 build:

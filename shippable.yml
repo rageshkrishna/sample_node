@@ -12,8 +12,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: ubuntu
-    image_tag: 14.04
+    image_name: drydock/u14php
+    image_tag: tip
     pull: false
 
   ci:

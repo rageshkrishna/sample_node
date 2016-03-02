@@ -12,8 +12,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: shippableimages/ubuntu1204_php
-    image_tag: latest
+    image_name: ubuntu
+    image_tag: 14.04
     pull: false
 
   ci:

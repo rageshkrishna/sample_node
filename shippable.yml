@@ -12,8 +12,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14php
-    image_tag: tip
+    image_name: shippableimages/ubuntu1204_php
+    image_tag: latest
     pull: false
 
   ci:

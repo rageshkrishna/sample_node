@@ -12,14 +12,14 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: alvaroc1/rovitracker
-    image_tag: base-testing
+    image_name: drydock/u14nod
+    image_tag: prod
     pull: false
 
   ci:
     #- for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;
-    - foobar
     - ssh-add -l
+    - ssh-agent bash -c 'ssh-add -l'
 
   on_failure:
     - echo "The job failed!!!!!"

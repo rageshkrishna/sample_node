@@ -19,7 +19,8 @@ build:
   ci:
     #- for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;
     - ssh-add -l
-    - ssh-agent bash -c 'ssh-add -l'
+    - ssh-agent bash -c 'ssh-add /tmp/ssh/sub; ssh-add -l'
+    - echo "Done"
 
   on_failure:
     - echo "The job failed!!!!!"

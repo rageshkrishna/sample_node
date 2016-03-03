@@ -12,8 +12,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: ubuntu
-    image_tag: 14.04
+    image_name: alvaroc1/rovitracker
+    image_tag: base-testing
     pull: false
 
   ci:

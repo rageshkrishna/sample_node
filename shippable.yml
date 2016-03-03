@@ -12,8 +12,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
+    image_name: alvaroc1/rovitracker
+    image_tag: base-testing
     pull: false
 
   ci:

@@ -9,11 +9,14 @@ env:
   global:
     - FOO="bar|baz"
     - FIZZ=bin
+    
+services:
+  - postgres
 
 build:
   pre_ci_boot:
-    image_name: alvaroc1/rovitracker
-    image_tag: base-testing
+    image_name: drydock/u14nod
+    image_tag: prod
     pull: false
 
   ci:

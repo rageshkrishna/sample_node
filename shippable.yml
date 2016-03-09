@@ -15,7 +15,7 @@ services:
 
 build:
   pre_ci_boot:
-    image_name: shippable/minv2
+    image_name: nginx
     image_tag: latest
     pull: false
 

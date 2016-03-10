@@ -7,8 +7,7 @@ node_js:
   
 env:
   global:
-    - FOO="bar|baz"
-    - FIZZ=bin
+    - FOO="baz" FIZZ=bin
     
 services:
   - postgres

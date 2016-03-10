@@ -19,11 +19,8 @@ build:
     pull: false
 
   ci:
-    #- for i in `seq 1 10`; do echo "Waiting... $i"; sleep 1; done;
-    - sudo docker images
-    - ssh-add -l
-    - ssh-agent bash -c 'ssh-add /tmp/ssh/00_sub; ssh-add -l'
-    - echo "Done"
+    - echo $FOO
+    - echo $FIZZ
 
   on_failure:
     - echo "The job failed!!!!!"

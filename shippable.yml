@@ -5,6 +5,13 @@ language: node_js
 node_js:
   - "0.10"
 
+env:
+  global:
+    - m1="ONE"
+  matrix:
+    - m2="TWO"
+    - m3="THREE"
+
 #env:
   #- secure: WE14NnqMnc1z7/eI6R2TLmtailH4keG6rWBugWmovZnE0QUtJWg+lwwbKtFv7NPxE8ncos9Ng/vvaZGvZnXwVgEGQOAksmfmyw8XikajsQcBWzwoH8W6cVC4wZRclb0fezu3wKMvqgTNhXuHZ8YxZMD/gK/0fxWdyasF3nbqRk7llIY//9l1xnN+yji5rfhIBxXfceHvZsS5GxcEKqgv9fwJ+58H2+9cYqKpB4tnrXTsu+pklQRUnJt2q6LlHP9ct+bwqdi7pwPzrgWfsw6F3u5tFAGcZLKYc+ZeOlZaaHVOfsVGm8xYfbqGOCQ/CHPDWPODj7IdIhMWXZkDKlod5A==
   #- FOO="bar" FIZZ="bam"

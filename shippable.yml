@@ -15,7 +15,7 @@ services:
 
 build:
   pre_ci_boot:
-    image_name: nginx
+    image_name: sblaz/ubuntu1404_nodejs_mongodb_redis
     image_tag: latest
     pull: false
 

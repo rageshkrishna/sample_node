@@ -30,7 +30,6 @@ services:
   - postgres
 
 build:
-  cache: true
   pre_ci_boot:
     image_name: sblaz/ubuntu1404_nodejs_mongodb_redis
     image_tag: latest
@@ -38,7 +37,6 @@ build:
 
   ci:
     - ./showEnv.sh
-    - shippable_cache_container
     - echo $(echo $FOO)
     - echo $(echo $FIZZ)
 

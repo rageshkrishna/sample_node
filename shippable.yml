@@ -15,8 +15,8 @@ services:
 
 build:
   pre_ci_boot:
-    image_name: alvaroc1/rovitracker
-    image_tag: base-testing
+    image_name: nginx
+    image_tag: latest
     pull: false
 
   ci:

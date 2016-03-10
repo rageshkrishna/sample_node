@@ -8,7 +8,8 @@ node_js:
 env:
   global:
     #- FOO="baz" FIZZ=bin
-    - secure: RPBk/nSN5O4mJgNuBZ3Hi7jLHCjpFy5Kotcg2+qdhEkLIgMs93E9s3oQpKq4TDGmfEeZupFXkTZzTls0HjoLI6ZtL8szSUEB5ZoHg84JjReUESciuhUEKWR7D7UftjuRizLWlBd1CgRFZtQ31z0IPo4cKH/x5mzU/Cn9CXVn4jmqBjz8Ksq+3iz3DEJQpLgHOgNbc3tz6GPLLhRF+bEG77gykOLvK76SOCD+mNZzh9NoaKTovvrd/vlg66cLGpbtXnGqjS1QkhVXji7PvoWfRKHzTzaL/g4U9nXlhqN8kw2rHNO9S7iyTnDsEdPyodxKLFttr0/+jZqfmvWyCxlS/g==
+    #- secure: RPBk/nSN5O4mJgNuBZ3Hi7jLHCjpFy5Kotcg2+qdhEkLIgMs93E9s3oQpKq4TDGmfEeZupFXkTZzTls0HjoLI6ZtL8szSUEB5ZoHg84JjReUESciuhUEKWR7D7UftjuRizLWlBd1CgRFZtQ31z0IPo4cKH/x5mzU/Cn9CXVn4jmqBjz8Ksq+3iz3DEJQpLgHOgNbc3tz6GPLLhRF+bEG77gykOLvK76SOCD+mNZzh9NoaKTovvrd/vlg66cLGpbtXnGqjS1QkhVXji7PvoWfRKHzTzaL/g4U9nXlhqN8kw2rHNO9S7iyTnDsEdPyodxKLFttr0/+jZqfmvWyCxlS/g==
+    - secure: WE14NnqMnc1z7/eI6R2TLmtailH4keG6rWBugWmovZnE0QUtJWg+lwwbKtFv7NPxE8ncos9Ng/vvaZGvZnXwVgEGQOAksmfmyw8XikajsQcBWzwoH8W6cVC4wZRclb0fezu3wKMvqgTNhXuHZ8YxZMD/gK/0fxWdyasF3nbqRk7llIY//9l1xnN+yji5rfhIBxXfceHvZsS5GxcEKqgv9fwJ+58H2+9cYqKpB4tnrXTsu+pklQRUnJt2q6LlHP9ct+bwqdi7pwPzrgWfsw6F3u5tFAGcZLKYc+ZeOlZaaHVOfsVGm8xYfbqGOCQ/CHPDWPODj7IdIhMWXZkDKlod5A==
 
 services:
   - postgres

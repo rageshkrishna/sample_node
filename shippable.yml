@@ -6,6 +6,9 @@ node_js:
   - "0.10"
 
 build:
+  pre_ci:
+    - echo "Pre CI"
+
   pre_ci_boot:
     image_name: drydock/u14nod
     image_tag: prod

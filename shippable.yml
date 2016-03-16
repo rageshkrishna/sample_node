@@ -10,9 +10,9 @@ build:
     - echo "Pre CI"
 
   pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
-    pull: false
+    image_name: docker.link.fish:4888/linkfish/ubuntu-web-dev-shippable
+    image_tag: latest
+    pull: true
 
   ci:
     - ./showEnv.sh

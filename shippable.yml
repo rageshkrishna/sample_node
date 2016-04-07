@@ -20,6 +20,7 @@ build:
     - ./showEnv.sh
     - echo $(echo $FOO)
     - echo $(echo $FIZZ)
+    - for i in {1..100}; do echo "Sleeping for 10s..."; sleep 10; done;
 
   on_failure:
     - echo "The job failed!!!!!"

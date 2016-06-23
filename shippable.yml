@@ -5,11 +5,11 @@ language: node_js
 node_js:
   - "0.10"
   
-services:
-  - postgresql
+#services:
+#  - postgresql
 
 build:
-  cache: true
+  #cache: true
   
   pre_ci_boot:
     image_name: drydock/u14nodpls
@@ -17,10 +17,7 @@ build:
     pull: true
 
   ci:
-    - ./showEnv.sh
-    - echo $(echo $FOO)
-    - echo $(echo $FIZZ)
-    - for i in {1..100}; do echo "Sleeping for 10s..."; sleep 10; done;
+    - echo "Hello, World!"
 
   on_failure:
     - echo "The job failed!!!!!"
